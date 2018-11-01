@@ -22,14 +22,20 @@ public class H2Runner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        try (Connection connection = dataSource.getConnection()){
+        try(Connection connection = dataSource.getConnection()) {
+
             String sql = "CREATE TABLE USER(id INTEGER NOT NULL, name VARCHAR(255), PRIMARY KEY (id))";
             Statement statement = connection.createStatement();
             statement.executeUpdate(sql);
             System.out.println(connection.getMetaData().getUserName());
+            System.out.println( connection.getMetaData().getURL());
+            jdbcTemplate.execute("INSERT INTO USER VALUES (3, 'junmyoung')");
+
+
+
         }
 
-       jdbcTemplate.execute("INSERT INTO USER VALUES (2, 'keesun')");
+
 
     }
 }
