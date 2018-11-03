@@ -1,9 +1,8 @@
-/*
-package me.jun.web.jdbc;*//*
-
 package me.jun.web.jdbc;
 
 
+import me.jun.web.account.Account;
+import me.jun.web.account.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -23,17 +22,20 @@ public class MySQLRunner implements ApplicationRunner {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
+    @Autowired
+    AccountRepository accountRepository;
+
     @Override
     public void run(ApplicationArguments args) throws Exception {
         try(Connection connection = dataSource.getConnection()) {
 
-            String sql = "CREATE TABLE USER_DATATABLE(id INTEGER NOT NULL, name VARCHAR(255), PRIMARY KEY (id))";
+            /*String sql = "CREATE TABLE USER_DATATABLE(id INTEGER NOT NULL, name VARCHAR(255), PRIMARY KEY (id))";
             Statement statement = connection.createStatement();
             statement.executeUpdate(sql);
             System.out.println(connection.getMetaData().getUserName());
             System.out.println( connection.getMetaData().getURL());
             jdbcTemplate.execute("INSERT INTO USER_DATATABLE VALUES (3, 'junmyoung')");
-
+            */
 
 
         }
@@ -43,5 +45,3 @@ public class MySQLRunner implements ApplicationRunner {
     }
 }
 
-
-*/

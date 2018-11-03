@@ -1,5 +1,6 @@
 /*
-package me.jun.web.jdbc;*/
+package me.jun.web.jdbc;*//*
+
 package me.jun.web.jdbc;
 
 
@@ -43,3 +44,4 @@ public class PostgreSQLRunner implements ApplicationRunner {
 }
 
 
+*/
