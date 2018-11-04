@@ -20,11 +20,14 @@ public class UserController {
 
         Account newAccount = accountRepository.save(account);
 
-        System.out.println(newAccount.toString());
+        System.out.println(newAccount);
 
 
-        System.out.println(accountRepository.findByUsername(newAccount.getUsername()).getId());
-        System.out.println(accountRepository.findByUsername(newAccount.getUsername()).getUsername());
+
+        accountRepository.findByUsername(newAccount.getUsername()).forEach(value ->{
+            System.out.println(value.toString());
+        });
+
 
 
 

@@ -39,9 +39,10 @@ public class AccountRepositoryTest {
 
         System.out.println(newAccount.toString());
 
+        accountRepository.findByUsername(newAccount.getUsername()).forEach(value->{
+            System.out.println(value.toString());
+        });
 
-        System.out.println(accountRepository.findByUsername(newAccount.getUsername()).getId());
-        System.out.println(accountRepository.findByUsername(newAccount.getUsername()).getUsername());
     }
 
 }
