@@ -1,4 +1,4 @@
-package me.jun.web.jdbc;
+/*package me.jun.web.jdbc;
 
 
 import me.jun.web.account.Account;
@@ -29,13 +29,13 @@ public class MySQLRunner implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         try(Connection connection = dataSource.getConnection()) {
 
-            /*String sql = "CREATE TABLE USER_DATATABLE(id INTEGER NOT NULL, name VARCHAR(255), PRIMARY KEY (id))";
+            String sql = "CREATE TABLE USER_DATATABLE(id INTEGER NOT NULL, name VARCHAR(255), PRIMARY KEY (id))";
             Statement statement = connection.createStatement();
             statement.executeUpdate(sql);
             System.out.println(connection.getMetaData().getUserName());
             System.out.println( connection.getMetaData().getURL());
             jdbcTemplate.execute("INSERT INTO USER_DATATABLE VALUES (3, 'junmyoung')");
-            */
+            
 
 
         }
@@ -45,3 +45,4 @@ public class MySQLRunner implements ApplicationRunner {
     }
 }
 
+*/
