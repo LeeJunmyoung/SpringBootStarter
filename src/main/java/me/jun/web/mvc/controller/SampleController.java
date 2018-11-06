@@ -8,12 +8,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class SampleController {
 
-    @GetMapping("helloworld")
+    @GetMapping("/helloworld")
     public String helloWorld(Model model){
 
         model.addAttribute("name","jun");
 
 
-        return "hello";
+        return "helloworld";
+    }
+    
+    @GetMapping("/my")
+    public String my(){
+    	return "my";
     }
 }

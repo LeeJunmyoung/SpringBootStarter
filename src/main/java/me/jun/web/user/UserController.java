@@ -14,24 +14,7 @@ public class UserController {
 
     @GetMapping("/hello")
     public String hello() {
-        Account account = new Account();
-        account.setUsername("jun");
-        account.setPassword("12343");
-
-        Account newAccount = accountRepository.save(account);
-
-        System.out.println(newAccount);
-
-
-
-        accountRepository.findByUsername(newAccount.getUsername()).forEach(value ->{
-            System.out.println(value.toString());
-        });
-
-
-
-
-        return "hello";
+             return "hello";
     }
 
     @PostMapping("/users/create")
