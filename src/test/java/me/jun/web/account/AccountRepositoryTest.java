@@ -37,11 +37,9 @@ public class AccountRepositoryTest {
 
         Account newAccount = accountRepository.save(account);
 
-        System.out.println(newAccount.toString());
+//        System.out.println(newAccount.toString());
 
-        accountRepository.findByUsername(newAccount.getUsername()).forEach(value->{
-            System.out.println(value.toString());
-        });
+        
 
     }
 

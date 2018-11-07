@@ -36,8 +36,8 @@ public class RedisRunner implements ApplicationRunner{
 		redisRepository.save(redisAccount);
 		
 		Optional<RedisAccount> byId = redisRepository.findById(redisAccount.getId());
-		System.out.println(byId.get().getUsername());
-		System.out.println(byId.get().getEmail());
+		//System.out.println(byId.get().getUsername());
+		//System.out.println(byId.get().getEmail());
 		
 		
 		
