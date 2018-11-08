@@ -9,7 +9,10 @@ import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient.Builder;
 
+import de.codecentric.boot.admin.server.config.EnableAdminServer;
+
 @SpringBootApplication
+@EnableAdminServer
 public class Application {
 
 
