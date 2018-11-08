@@ -1,4 +1,4 @@
-/*
+
 package me.jun.web.jdbc;
 
 
@@ -40,4 +40,4 @@ public class H2Runner implements ApplicationRunner {
 
     }
 }
-*/
+

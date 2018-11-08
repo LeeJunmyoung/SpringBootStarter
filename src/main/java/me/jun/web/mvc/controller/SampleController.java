@@ -21,4 +21,6 @@ public class SampleController {
     public String my(){
     	return "my";
     }
+    
+    
 }

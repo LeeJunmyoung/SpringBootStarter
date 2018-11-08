@@ -1,4 +1,4 @@
-package me.jun.web.config;
+/*package me.jun.web.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -32,3 +32,4 @@ public class SecurityRunner implements ApplicationRunner {
 	}
 
 }
+*/

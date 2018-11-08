@@ -1,4 +1,4 @@
-package me.jun.web.config;
+/*package me.jun.web.config;
 
 import static org.springframework.security.test.web.servlet.response.SecurityMockMvcResultMatchers.authenticated;
 
@@ -35,13 +35,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements U
 	protected void configure(HttpSecurity http) throws Exception {
 		// TODO Auto-generated method stub
 		http.authorizeRequests()
-			.antMatchers("/","/helloworld").permitAll()
+			.antMatchers("/","/helloworld","/h2-console/**").permitAll()
 			.anyRequest().authenticated()
 			.and()
 		   .formLogin()
 		   	.and()
 		   .httpBasic();
 			
+		http.csrf().disable();
+        http.headers().frameOptions().disable();
+		
 	}
 
 	@Override
@@ -65,3 +68,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements U
 	}
 
 }
+*/
